@@ -18,6 +18,13 @@ body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.6;
     background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+}
+
+.body {
+    width: 85%;
 }
 
 header {
@@ -25,21 +32,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    background: #fff;
+    background: #f9f9f9;
     border-bottom: 1px solid #ccc;
 }
 
 .logo img {
     height: 100px;
     width: 110px;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .menu-toggle {
     flex-direction: column;
     cursor: pointer;
     font-size: 20px;
-    padding: 0px 30px 0px 0px;
+    margin-right: 35px;
 }
 
 .menu-toggle span {
@@ -72,16 +79,33 @@ header {
     object-fit: cover;
 }
 
-.overlay {
+.overlay1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 52%;
+    left: 19.5%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 255, 0.7);
-    padding: 10px 20px;
+    background: #244ac2;
+    padding: 30px 0px 30px 110px;
     color: #fff;
     font-size: 1.5rem;
     text-align: center;
+    width: 590px;
+    font-size: 24px;
+    z-index: 2;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 52%;
+    right: -13.7%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+    padding: 30px 0px 30px 110px;
+    color: #000000;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 200px;
+    font-size: 24px;
     z-index: 2;
 }
 
@@ -126,9 +150,8 @@ header {
 }
 
 .intro {
-    padding: 40px 30px;
+    padding: 40px 60px;
     text-align: left;
-    font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -136,6 +159,7 @@ header {
 
 .content1 {
     width: 60%;
+    font-size: 17px;
 }
 
 .content2 {
@@ -144,30 +168,16 @@ header {
     justify-content: end;
 }
 
-.content2 p {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    font-size: 40px;
-    font-weight: 700;
-    color: #244ac2;
-}
-
-#bracket1 {
-    rotate: 90deg;
-    padding-left: 30px;
-}
-
-#bracket2 {
-    rotate: 90deg;
-    padding-right: 20px;
+.icons {
+    width: 47x;
+    height: 47px;
 }
 
 .features {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    background: #f4f4f4;
+    padding: 10px 50px;
+    background: #f9f9f9;
     height: 250px;
 }
 
@@ -196,7 +206,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 50px;
     background: #fff;
 }
 
@@ -204,7 +214,7 @@ header {
     display: flex;
     flex: 1;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .tag-link {
